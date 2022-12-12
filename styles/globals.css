@@ -16,6 +16,24 @@ a {
   text-decoration: none;
 }
 
+.login {
+  display: flex;
+  flex-direction: column;
+  height: 35rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-input {
+  width: 400px;
+  margin-top: 20px;
+  padding: 10px 12px;
+  border-radius: 15px;
+  font-size: 20px;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+}
+
 .main-container{
 max-width: 1400px; 
 margin: auto;

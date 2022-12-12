@@ -9,6 +9,11 @@ export const StateContext = ({ children }) => {
     const [totalPrice, setTotalPrice] = useState(0);
     const [totalQuantities, setTotalQuantities] = useState(0);
     const [qty, setQty] = useState(1);
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
 
     let foundProduct;
     let index;
@@ -93,6 +98,16 @@ export const StateContext = ({ children }) => {
             setCartItems,
             setTotalPrice,
             setTotalQuantities,
+            firstName,
+            lastName,
+            email,
+            password,
+            confirmPassword,
+            setFirstName,
+            setLastName,
+            setEmail,
+            setPassword,
+            setConfirmPassword,
         }}>
             {children}
         </context.Provider>
